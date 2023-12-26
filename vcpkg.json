@@ -1,0 +1,12 @@
+{
+  "name" : "qt-test",
+  "version-string" : "1.0.0",
+  "builtin-baseline" : "0e47c1985273129e4d0ee52ff73bed9125555de8",
+  "dependencies" : [ {
+    "name" : "qt5",
+    "version>=" : "5.15.11"
+  }, {
+    "name" : "fmt",
+    "version>=" : "10.1.1"
+  } ]
+}
