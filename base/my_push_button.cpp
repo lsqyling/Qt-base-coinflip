@@ -1,5 +1,5 @@
 //
-// Created by 10580 on 2023/12/22.
+// Created by 10580.
 //
 
 // You may need to build the project (run Qt uic code generator) to get "ui_my_push_button.h" resolved

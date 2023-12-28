@@ -1,5 +1,5 @@
 //
-// Created by 10580 on 2023/12/23.
+// Created by 10580.
 //
 
 #ifndef QT_TEST_STUDENT_H

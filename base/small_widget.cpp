@@ -1,5 +1,5 @@
 //
-// Created by 10580 on 2023/12/24.
+// Created by 10580.
 //
 
 // You may need to build the project (run Qt uic code generator) to get "ui_small_widget.h" resolved

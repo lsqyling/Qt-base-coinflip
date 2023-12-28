@@ -1,5 +1,5 @@
 //
-// Created by 10580 on 2023/12/25.
+// Created by 10580.
 //
 
 #ifndef QT_TEST_PAINT_WIDGET_H

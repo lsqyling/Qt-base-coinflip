@@ -1,5 +1,5 @@
 //
-// Created by 10580 on 2023/12/23.
+// Created by 10580.
 //
 
 #ifndef QT_TEST_QT5_MAIN_WINDOW_H

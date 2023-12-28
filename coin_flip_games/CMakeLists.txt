@@ -2,26 +2,15 @@
 file(GLOB src_list RELATIVE ${CMAKE_CURRENT_LIST_DIR} *.cpp)
 
 
-add_executable(coinflip ${src_list}
-        main_scene.cpp
-        main_scene.h
-        main_scene.ui
-        img_push_button.cpp
-        img_push_button.h
-        choose_level_scene.cpp
-        choose_level_scene.h
-        choose_level_scene.ui
-        play_scene.cpp
-        play_scene.h
-        play_scene.ui
-        coin_push_button.cpp
-        coin_push_button.h)
+add_executable(CoinFlip ${src_list})
 
-target_include_directories(coinflip
+
+
+target_include_directories(CoinFlip
         PUBLIC
         ${CMAKE_CURRENT_LIST_DIR})
 
-target_link_libraries(coinflip
+target_link_libraries(CoinFlip
         Qt::Core
         Qt::Gui
         Qt::Widgets

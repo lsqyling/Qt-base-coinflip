@@ -29,9 +29,12 @@ find_package(Qt5 COMPONENTS
         Core
         Gui
         Widgets
+        Multimedia
         REQUIRED)
+
 find_package(fmt REQUIRED)
 
 
 
 add_subdirectory(base)
+add_subdirectory(coin_flip_games)
