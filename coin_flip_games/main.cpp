@@ -1,8 +1,5 @@
 #include <QApplication>
-
-
-
-
+#include "main_scene.h"
 
 
 int main(int argc, char *argv[])
@@ -11,7 +8,8 @@ int main(int argc, char *argv[])
 
 
 
-
+    main_scene mc;
+    mc.show();
 
 
 
