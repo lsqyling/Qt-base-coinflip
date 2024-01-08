@@ -1,12 +1,15 @@
 {
-  "name" : "qt-test",
+  "name" : "qt-base",
   "version-string" : "1.0.0",
-  "builtin-baseline" : "0e47c1985273129e4d0ee52ff73bed9125555de8",
+  "builtin-baseline" : "742c086636a9cfb57eb77a6cc5f2d6832666d169",
   "dependencies" : [ {
-    "name" : "qt5",
-    "version>=" : "5.15.11"
+    "name" : "qt5-base",
+    "version>=" : "5.15.12"
   }, {
     "name" : "fmt",
-    "version>=" : "10.1.1"
+    "version>=" : "10.2.0"
+  }, {
+    "name" : "qt5-multimedia",
+    "version>=" : "5.15.12"
   } ]
 }

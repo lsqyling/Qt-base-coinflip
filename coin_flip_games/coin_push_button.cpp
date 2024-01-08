@@ -10,7 +10,7 @@ coin_push_button::coin_push_button(const QString& img_path)
     QPixmap pix;
     if (!pix.load(img_path))
     {
-        fmt::print(stderr, "图片: {}加载失败\n");
+        fmt::print(stderr, "图片: {}加载失败\n", img_path.toStdString());
         return;
     }
     this->setFixedSize(pix.width(), pix.height());
@@ -21,7 +21,7 @@ coin_push_button::coin_push_button(const QString& img_path)
     timer1 = new QTimer(this);
     timer2 = new QTimer(this);
 
-    connect(timer1, &QTimer::timeout, [=]() {
+    connect(timer1, &QTimer::timeout, [=, this]() {
         QPixmap pix;
         std::string str = fmt::format("../images/Coin000{}.png", min++);
         pix.load(QString::fromStdString(str));
@@ -40,7 +40,7 @@ coin_push_button::coin_push_button(const QString& img_path)
 
     });
 
-    connect(timer2, &QTimer::timeout, [=]() {
+    connect(timer2, &QTimer::timeout, [=, this]() {
         QPixmap pix;
         std::string str = fmt::format("../images/Coin000{}.png", max--);
         pix.load(QString::fromStdString(str));

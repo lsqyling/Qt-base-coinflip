@@ -6,13 +6,12 @@
 #include <QTimer>
 #include <QMouseEvent>
 #include <iostream>
-#include <fmt/core.h>
 #include "main_widget.h"
 #include "ui_main_widget.h"
 
 static void print_helper(const std::string &msg, QMouseEvent *ev)
 {
-    fmt::print("{}: x:{}, y:{}, globalX:{}, globalY: {}",
+    std::cout << std::format("{}: x:{}, y:{}, globalX:{}, globalY: {}",
                msg, ev->x(), ev->y(), ev->globalX(), ev->globalY());
     std::cout << std::endl;
 }

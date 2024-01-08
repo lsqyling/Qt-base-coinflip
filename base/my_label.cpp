@@ -1,14 +1,10 @@
 //
 //
-#include <fmt/core.h>
 #include <iostream>
+#include <format>
 #include "my_label.h"
 #include <QMouseEvent>
 
-void my_label::enterEvent(QEvent *event)
-{
-    std::cout << "鼠标进入了..." << std::endl;
-}
 
 void my_label::leaveEvent(QEvent *event)
 {
@@ -23,7 +19,7 @@ my_label::my_label(QWidget *parent) : QLabel(parent)
 
 static void print_helper(const std::string &msg, QMouseEvent *ev)
 {
-    fmt::print("{}: x:{}, y:{}, globalX:{}, globalY: {}",
+    std::cout << std::format("{}: x:{}, y:{}, globalX:{}, globalY: {}",
                msg, ev->x(), ev->y(), ev->globalX(), ev->globalY());
     std::cout << std::endl;
 }
@@ -62,3 +58,11 @@ bool my_label::event(QEvent *e)
 //    其他事件交给父类处理
     return QLabel::event(e);
 }
+
+void my_label::enterEvent(QEvent *event)
+{
+    std::cout << "鼠标进入了..." << std::endl;
+    QWidget::enterEvent(event);
+}
+
+

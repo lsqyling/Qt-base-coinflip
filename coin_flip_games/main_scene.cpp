@@ -25,7 +25,7 @@ main_scene::main_scene(QWidget *parent) :
     this->setWindowTitle("CoinFlipGames");
 
 //  设置推出按钮
-    connect(ui->actionQuit, &QAction::triggered, [=]() {
+    connect(ui->actionQuit, &QAction::triggered, [=, this]() {
         this->close();
     });
 //    设置开始按钮
@@ -44,7 +44,7 @@ main_scene::main_scene(QWidget *parent) :
     auto start_btn_sound = new QSound("../images/TapButtonSound.wav", this);
 
 
-    connect(start_btn, &QPushButton::clicked, [=]() {
+    connect(start_btn, &QPushButton::clicked, [=, this]() {
 //        播放音效资源
         start_btn_sound->play();
 //        弹跳效果
@@ -55,7 +55,7 @@ main_scene::main_scene(QWidget *parent) :
 
 
 //        延时进入到选择关卡场景中
-        QTimer::singleShot(500, this, [=]() {
+        QTimer::singleShot(500, this, [=, this]() {
 //            自身隐藏
             this->hide();
 //            获取位置

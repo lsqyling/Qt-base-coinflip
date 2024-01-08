@@ -34,6 +34,7 @@ public:
     QSplitter *splitter_2;
     QLabel *labelTimer1;
     QLabel *labelTimer2;
+    QPushButton *pushButton;
 
     void setupUi(QWidget *main_widget)
     {
@@ -79,8 +80,12 @@ public:
         labelTimer2->setObjectName("labelTimer2");
         labelTimer2->setFrameShape(QFrame::Panel);
         splitter_2->addWidget(labelTimer2);
+        pushButton = new QPushButton(main_widget);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(650, 390, 93, 28));
 
         retranslateUi(main_widget);
+        QObject::connect(pushButton, &QPushButton::clicked, main_widget, qOverload<>(&QWidget::close));
 
         QMetaObject::connectSlotsByName(main_widget);
     } // setupUi
@@ -96,6 +101,7 @@ public:
         pushButtonHalfValue->setText(QCoreApplication::translate("main_widget", "\350\256\276\347\275\256\345\200\274\345\210\260\344\270\200\345\215\212", nullptr));
         labelTimer1->setText(QString());
         labelTimer2->setText(QString());
+        pushButton->setText(QCoreApplication::translate("main_widget", "Colse", nullptr));
     } // retranslateUi
 
 };

@@ -5,7 +5,6 @@
 // You may need to build the project (run Qt uic code generator) to get "ui_qt5_ui_main_window.h" resolved
 #include <QFontDialog>
 #include <QFileDialog>
-#include <fmt/core.h>
 #include <QMessageBox>
 #include <QDialog>
 #include <iostream>
@@ -65,14 +64,14 @@ qt5_ui_main_window::qt5_ui_main_window(QWidget *parent) :
 //        其他标准对话框
 //        颜色对话框
         auto color = QColorDialog::getColor(QColor(255, 0, 0));
-        fmt::println("r:{}, g:{}, b:{}", color.red(), color.green(), color.blue());
+        std::cout << std::format("r:{}, g:{}, b:{}", color.red(), color.green(), color.blue());
 
 //        文件对话框
         QFileDialog::getOpenFileName(this, "打开文件", "D:/dev", "(*.exe)");
 //        字体对话框
         bool flag;
         auto front = QFontDialog::getFont(&flag, this);
-        fmt::print("字体：{}， 字号：{}， 是否加粗：{}， 是否倾斜:{}\n",
+        std::cout << std::format("字体：{}， 字号：{}， 是否加粗：{}， 是否倾斜:{}\n",
                    front.family().toStdString(), front.pointSize(), front.bold(), front.italic());
 
 

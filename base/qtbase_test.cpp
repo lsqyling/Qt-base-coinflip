@@ -7,6 +7,14 @@
 #include "main_widget.h"
 #include "paint_widget.h"
 #include "file_widget.h"
+#include "dialog_window.h"
+#include "file_edit_window.h"
+#include "class_info_window.h"
+#include "qstring_window.h"
+#include "spinbox_window.h"
+#include "numinput_show_window.h"
+#include "datetime_timer_window.h"
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -33,9 +41,27 @@ int main(int argc, char *argv[])
 //    paint_widget pw;
 //    pw.show();
 
-    file_widget fw;
-    fw.show();
+//    file_widget fw;
+//    fw.show();
+//    dialog_window dw;
+//    dw.show();
 
+//    file_edit_window few;
+//    few.show();
 
+//    class_info_window ciw;
+//    ciw.show();
+
+//    qstring_window qsw;
+//    qsw.show();
+
+//    spinbox_window sbw;
+//    sbw.show();
+
+//    numinput_show_window nsw;
+//    nsw.show();
+
+    datetime_timer_window dtw;
+    dtw.show();
     return QApplication::exec();
 }

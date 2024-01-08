@@ -11,7 +11,11 @@ class my_label : public QLabel
     Q_OBJECT
 public:
     my_label(QWidget *parent);
+
+protected:
     void enterEvent(QEvent *event) override;
+
+public:
 
     void leaveEvent(QEvent *event) override;
 

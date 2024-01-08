@@ -8,9 +8,9 @@
 #include <QFileInfo>
 #include <QDateTime>
 #include <QFile>
+#include <iostream>
 #include "file_widget.h"
 #include "ui_file_widget.h"
-#include "fmt/core.h"
 
 
 file_widget::file_widget(QWidget *parent) :
@@ -19,7 +19,7 @@ file_widget::file_widget(QWidget *parent) :
     ui->setupUi(this);
 
 //  设置读取文件路径，将文件内容加载到文本区域中
-    connect(ui->pushButton, &QPushButton::clicked, [=]() {
+    connect(ui->pushButton, &QPushButton::clicked, [this]() {
         QString path = QFileDialog::getOpenFileName(this, "打开文件", "../");
 //        将路径放入lineEdit中
         ui->lineEdit->setText(path);
@@ -38,10 +38,10 @@ file_widget::file_widget(QWidget *parent) :
 
 //        文件信息类：QFileInfo
         QFileInfo info(path);
-        fmt::print("大小：{}\n文件名：{}\n文件路径：{}\n后缀名：{}\n",
+        std::cout << std::format("大小：{}\n文件名：{}\n文件路径：{}\n后缀名：{}\n",
                    info.size(), info.fileName().toStdString(),
                    info.filePath().toStdString(), info.suffix().toStdString());
-        fmt::print("创建时间：{}\n最后修改时间：{}\n拥有者: {}\n",
+        std::cout << std::format("创建时间：{}\n最后修改时间：{}\n拥有者: {}\n",
                    info.birthTime().toString("yyyy-MM-dd hh:mm:ss").toStdString(),
                    info.lastModified().toString("yyyy-MM-dd hh:mm:ss").toStdString(),
                    info.owner().toStdString());
