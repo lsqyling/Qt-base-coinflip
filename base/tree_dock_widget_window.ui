@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>tree_dock_widget_window</class>
+ <widget class="QMainWindow" name="tree_dock_widget_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1049</width>
+    <height>594</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>tree_dock_widget_window</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>759</width>
+         <height>460</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1049</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>目录树</string>
+    </property>
+    <addaction name="actionAddFolder"/>
+    <addaction name="actionAddFile"/>
+    <addaction name="actionDelItem"/>
+    <addaction name="actionScanItems"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>视图</string>
+    </property>
+    <addaction name="actionZoomIn"/>
+    <addaction name="actionZoomOut"/>
+    <addaction name="actionZoomRealSize"/>
+    <addaction name="actionZoomWidth"/>
+    <addaction name="actionZoomHigh"/>
+    <addaction name="actionDockVisible"/>
+    <addaction name="actionDockFloat"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="allowedAreas">
+    <set>Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea</set>
+   </property>
+   <property name="windowTitle">
+    <string>图片目录树</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QTreeWidget" name="treeWidget">
+       <column>
+        <property name="text">
+         <string>item</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>type</string>
+        </property>
+       </column>
+       <item>
+        <property name="text">
+         <string>new Folder</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../images/icon/add_folder.bmp</normaloff>../images/icon/add_folder.bmp</iconset>
+        </property>
+        <property name="text">
+         <string>root</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionAddFolder"/>
+   <addaction name="actionAddFile"/>
+   <addaction name="actionDelItem"/>
+   <addaction name="actionScanItems"/>
+   <addaction name="separator"/>
+   <addaction name="actionZoomIn"/>
+   <addaction name="actionZoomOut"/>
+   <addaction name="actionZoomRealSize"/>
+   <addaction name="actionZoomWidth"/>
+   <addaction name="actionZoomHigh"/>
+   <addaction name="separator"/>
+   <addaction name="actionDockFloat"/>
+   <addaction name="actionDockVisible"/>
+   <addaction name="separator"/>
+   <addaction name="actionQuit"/>
+  </widget>
+  <action name="actionAddFolder">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/icon/add_folder.bmp</normaloff>../images/icon/add_folder.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>添加目录</string>
+   </property>
+  </action>
+  <action name="actionAddFile">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/icon/add_files.ico</normaloff>../images/icon/add_files.ico</iconset>
+   </property>
+   <property name="text">
+    <string>添加文件</string>
+   </property>
+  </action>
+  <action name="actionZoomIn">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/icon/zoom_in.bmp</normaloff>../images/icon/zoom_in.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>放大</string>
+   </property>
+  </action>
+  <action name="actionZoomOut">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/icon/zoom_out.bmp</normaloff>../images/icon/zoom_out.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>缩小</string>
+   </property>
+  </action>
+  <action name="actionZoomRealSize">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/icon/visible.bmp</normaloff>../images/icon/visible.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>实际大小</string>
+   </property>
+  </action>
+  <action name="actionZoomWidth">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/icon/zoom_width.bmp</normaloff>../images/icon/zoom_width.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>适合宽度</string>
+   </property>
+  </action>
+  <action name="actionDelItem">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/icon/delete_item_red.bmp</normaloff>../images/icon/delete_item_red.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>删除节点</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/icon/exit.bmp</normaloff>../images/icon/exit.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionZoomHigh">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/icon/zoom_hight.bmp</normaloff>../images/icon/zoom_hight.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>适合高度</string>
+   </property>
+  </action>
+  <action name="actionScanItems">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/icon/traversal_node.bmp</normaloff>../images/icon/traversal_node.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>遍历节点</string>
+   </property>
+  </action>
+  <action name="actionDockVisible">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/icon/visible.bmp</normaloff>../images/icon/visible.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>窗体可见</string>
+   </property>
+  </action>
+  <action name="actionDockFloat">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/icon/window_float.bmp</normaloff>../images/icon/window_float.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>窗体浮动</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="../images/icon/base_img.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>tree_dock_widget_window</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>524</x>
+     <y>296</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

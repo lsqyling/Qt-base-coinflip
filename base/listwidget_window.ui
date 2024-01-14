@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>listwidget_window</class>
+ <widget class="QMainWindow" name="listwidget_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>984</width>
+    <height>653</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>listwidget_window</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QSplitter" name="splitter">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QToolBox" name="toolBox">
+       <property name="minimumSize">
+        <size>
+         <width>180</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>180</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="page_listWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>180</width>
+          <height>456</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>QListWidget操作</string>
+        </attribute>
+        <widget class="QToolButton" name="toolButtonListInit">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>0</y>
+           <width>181</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>InitList</string>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextBesideIcon</enum>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButtonListClear">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>181</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ClearList</string>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextBesideIcon</enum>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButtonListInsert">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>90</y>
+           <width>181</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>InsertItem</string>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextBesideIcon</enum>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButtonListAdd">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>150</y>
+           <width>181</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>AddItem</string>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextBesideIcon</enum>
+         </property>
+        </widget>
+        <widget class="QToolButton" name="toolButtonListDeleteItem">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>200</y>
+           <width>181</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>DeleteItem</string>
+         </property>
+         <property name="toolButtonStyle">
+          <enum>Qt::ToolButtonTextBesideIcon</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_treeWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>180</width>
+          <height>456</height>
+         </rect>
+        </property>
+        <attribute name="label">
+         <string>QTreeWidget操作</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="page_tableWidget">
+        <attribute name="label">
+         <string>QTableWidget操作</string>
+        </attribute>
+       </widget>
+      </widget>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_listWidget">
+        <attribute name="title">
+         <string>QListWidget</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="0" column="0">
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="title">
+            <string/>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>当前项变化</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="lineEdit"/>
+            </item>
+            <item row="0" column="2">
+             <widget class="QCheckBox" name="checkBox">
+              <property name="text">
+               <string>可编辑</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QGroupBox" name="groupBox">
+           <property name="title">
+            <string/>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="0" column="0">
+             <widget class="QToolButton" name="toolButtonSelectItems">
+              <property name="text">
+               <string>SelectItem</string>
+              </property>
+              <property name="popupMode">
+               <enum>QToolButton::MenuButtonPopup</enum>
+              </property>
+              <property name="toolButtonStyle">
+               <enum>Qt::ToolButtonTextBesideIcon</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QToolButton" name="toolButtonSelectAll">
+              <property name="text">
+               <string>SelectAll</string>
+              </property>
+              <property name="toolButtonStyle">
+               <enum>Qt::ToolButtonTextBesideIcon</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QToolButton" name="toolButtonSelectNone">
+              <property name="text">
+               <string>SelectNone</string>
+              </property>
+              <property name="toolButtonStyle">
+               <enum>Qt::ToolButtonTextBesideIcon</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QToolButton" name="toolButtonSelectInvert">
+              <property name="text">
+               <string>SelectInvert</string>
+              </property>
+              <property name="toolButtonStyle">
+               <enum>Qt::ToolButtonTextBesideIcon</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QListWidget" name="listWidget">
+           <property name="contextMenuPolicy">
+            <enum>Qt::CustomContextMenu</enum>
+           </property>
+           <item>
+            <property name="text">
+             <string>Item1</string>
+            </property>
+            <property name="checkState">
+             <enum>Checked</enum>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../images/icon/Item.ico</normaloff>../images/icon/Item.ico</iconset>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Item2</string>
+            </property>
+            <property name="checkState">
+             <enum>Checked</enum>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../images/icon/Item.ico</normaloff>../images/icon/Item.ico</iconset>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_treeWidget">
+        <attribute name="title">
+         <string>QTreeWidget</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tab_tableWidget">
+        <attribute name="title">
+         <string>QTableWidget</string>
+        </attribute>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>984</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionListInit"/>
+   <addaction name="actionListClear"/>
+   <addaction name="actionListInsertItem"/>
+   <addaction name="actionListAddItem"/>
+   <addaction name="actionListDeleteItem"/>
+  </widget>
+  <action name="actionListInit">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/icon/init_list.bmp</normaloff>../images/icon/init_list.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>初始化列表</string>
+   </property>
+  </action>
+  <action name="actionListClear">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/icon/clear_list.bmp</normaloff>../images/icon/clear_list.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>清除列表</string>
+   </property>
+  </action>
+  <action name="actionListInsertItem">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/icon/insert_item.bmp</normaloff>../images/icon/insert_item.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>插入项</string>
+   </property>
+  </action>
+  <action name="actionListAddItem">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/icon/add_item.bmp</normaloff>../images/icon/add_item.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>添加项</string>
+   </property>
+  </action>
+  <action name="actionListDeleteItem">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/icon/delete_item.bmp</normaloff>../images/icon/delete_item.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>删除当前项</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/icon/exit.bmp</normaloff>../images/icon/exit.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionSelectItems">
+   <property name="icon">
+    <iconset>
+     <normaloff>../images/icon/items_select.bmp</normaloff>../images/icon/items_select.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>项选择</string>
+   </property>
+  </action>
+  <action name="actionSelectAll">
+   <property name="text">
+    <string>全选</string>
+   </property>
+  </action>
+  <action name="actionSelectNone">
+   <property name="text">
+    <string>全不选</string>
+   </property>
+  </action>
+  <action name="actionSelectInverse">
+   <property name="text">
+    <string>反选</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>listwidget_window</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>491</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

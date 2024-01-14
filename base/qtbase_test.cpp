@@ -14,6 +14,9 @@
 #include "spinbox_window.h"
 #include "numinput_show_window.h"
 #include "datetime_timer_window.h"
+#include "combo_box_window.h"
+#include "listwidget_window.h"
+#include "tree_dock_widget_window.h"
 
 int main(int argc, char *argv[])
 {
@@ -61,7 +64,14 @@ int main(int argc, char *argv[])
 //    numinput_show_window nsw;
 //    nsw.show();
 
-    datetime_timer_window dtw;
-    dtw.show();
+//    datetime_timer_window dtw;
+//    dtw.show();
+//    combo_box_window cbw;
+//    cbw.show();
+//    listwidget_window lww;
+//    lww.show();
+
+    tree_dock_widget_window tdww;
+    tdww.show();
     return QApplication::exec();
 }
