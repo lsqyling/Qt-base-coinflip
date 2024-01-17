@@ -1,4 +1,5 @@
 #include <QApplication>
+#include <QTextCodec>
 #include "qt5ui_widget.h"
 #include "qt5_main_window.h"
 #include "qt5_ui_main_window.h"
@@ -17,10 +18,15 @@
 #include "combo_box_window.h"
 #include "listwidget_window.h"
 #include "tree_dock_widget_window.h"
+#include "table_widget_window.h"
+#include "filesys_model_window.h"
+#include "stringlist_model_window.h"
+#include "standard_model_window.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+    QTextCodec::setCodecForLocale(QTextCodec::codecForName("UTF-8"));
 
 //    qt5ui_widget widget;
 //    widget.show();
@@ -71,7 +77,17 @@ int main(int argc, char *argv[])
 //    listwidget_window lww;
 //    lww.show();
 
-    tree_dock_widget_window tdww;
-    tdww.show();
+//    tree_dock_widget_window tdww;
+//    tdww.show();
+
+//    table_widget_window tww;
+//    tww.show();
+
+//    filesys_model_window fmw;
+//    fmw.show();
+//    stringlist_model_window smw;
+//    smw.show();
+    standard_model_window smw;
+    smw.show();
     return QApplication::exec();
 }
