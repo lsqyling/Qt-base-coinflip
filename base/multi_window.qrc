@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../images/icon_multi_window/230.bmp</file>
+        <file>../images/icon_multi_window/516.bmp</file>
+        <file>../images/icon_multi_window/132.bmp</file>
+        <file>../images/icon_multi_window/506.bmp</file>
+        <file>../images/icon_multi_window/3.ico</file>
+        <file>../images/icon_multi_window/804.bmp</file>
+        <file>../images/icon_multi_window/510.bmp</file>
+        <file>../images/icon_multi_window/512.bmp</file>
+        <file>../images/icon_multi_window/514.bmp</file>
+        <file>../images/icon_multi_window/500.bmp</file>
+        <file>../images/icon_multi_window/502.bmp</file>
+        <file>../images/icon_multi_window/504.bmp</file>
+        <file>../images/icon_multi_window/100.bmp</file>
+        <file>../images/icon_multi_window/104.bmp</file>
+        <file>../images/icon_multi_window/122.bmp</file>
+        <file>../images/icon_multi_window/200.bmp</file>
+        <file>../images/icon_multi_window/202.bmp</file>
+        <file>../images/icon_multi_window/204.bmp</file>
+        <file>../images/icon_multi_window/206.bmp</file>
+        <file>../images/icon_multi_window/208.bmp</file>
+        <file>../images/icon_multi_window/2.ico</file>
+        <file>../images/icon_multi_window/back2.jpg</file>
+        <file>../images/icon_multi_window/704.bmp</file>
+        <file>../images/icon_multi_window/706.bmp</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>multi_window</class>
+ <widget class="QMainWindow" name="multi_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>961</width>
+    <height>641</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>multi_window</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>90</y>
+      <width>391</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="tabsClosable">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionWidgetInside"/>
+   <addaction name="actionWidgetDetached"/>
+   <addaction name="actionMainWindowInside"/>
+   <addaction name="actionMainWindowDetached"/>
+   <addaction name="separator"/>
+   <addaction name="actionQuit"/>
+  </widget>
+  <action name="actionWidgetInside">
+   <property name="icon">
+    <iconset resource="multi_window.qrc">
+     <normaloff>:/images/icon_multi_window/100.bmp</normaloff>:/images/icon_multi_window/100.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>嵌入式Widget</string>
+   </property>
+   <property name="toolTip">
+    <string>嵌入式MainWindow</string>
+   </property>
+  </action>
+  <action name="actionWidgetDetached">
+   <property name="icon">
+    <iconset resource="multi_window.qrc">
+     <normaloff>:/images/icon_multi_window/804.bmp</normaloff>:/images/icon_multi_window/804.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>独立Widget窗口</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="multi_window.qrc">
+     <normaloff>:/images/icon_multi_window/132.bmp</normaloff>:/images/icon_multi_window/132.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionMainWindowInside">
+   <property name="icon">
+    <iconset resource="multi_window.qrc">
+     <normaloff>:/images/icon_multi_window/2.ico</normaloff>:/images/icon_multi_window/2.ico</iconset>
+   </property>
+   <property name="text">
+    <string>嵌入式MainWindow</string>
+   </property>
+  </action>
+  <action name="actionMainWindowDetached">
+   <property name="icon">
+    <iconset resource="multi_window.qrc">
+     <normaloff>:/images/icon_multi_window/3.ico</normaloff>:/images/icon_multi_window/3.ico</iconset>
+   </property>
+   <property name="text">
+    <string>独立MainWindow窗口</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="multi_window.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>multi_window</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>396</x>
+     <y>211</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

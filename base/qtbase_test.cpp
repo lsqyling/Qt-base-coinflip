@@ -22,6 +22,9 @@
 #include "filesys_model_window.h"
 #include "stringlist_model_window.h"
 #include "standard_model_window.h"
+#include "standard_dialog_window.h"
+#include "custom_dialog_box_window.h"
+#include "multi_window.h"
 
 int main(int argc, char *argv[])
 {
@@ -89,5 +92,13 @@ int main(int argc, char *argv[])
 //    smw.show();
     standard_model_window smw;
     smw.show();
+//    standard_dialog_window sdw;
+//    sdw.show();
+//    custom_dialog_box_window cdbw;
+//    cdbw.show();
+//    multi_window mw;
+//    mw.show();
+
+
     return QApplication::exec();
 }
