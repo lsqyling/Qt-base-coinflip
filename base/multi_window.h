@@ -24,6 +24,11 @@ public:
     ~multi_window() override;
 
 private:
+    void on_action_triggered();
+    void on_widgets_event();
+
+
+
     Ui::multi_window *ui;
 };
 

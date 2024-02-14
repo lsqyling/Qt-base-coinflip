@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>bin_io_window</class>
+ <widget class="QMainWindow" name="bin_io_window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1062</width>
+    <height>601</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>bin_io_window</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>80</y>
+      <width>541</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>表格数据文件</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QTableView" name="tableView"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionTableReset"/>
+   <addaction name="actionTextOpen"/>
+   <addaction name="actionStmOpen"/>
+   <addaction name="actionStmSave"/>
+   <addaction name="actionDataOpen"/>
+   <addaction name="actionDataSave"/>
+   <addaction name="separator"/>
+   <addaction name="actionQuit"/>
+  </widget>
+  <action name="actionTableReset">
+   <property name="icon">
+    <iconset resource="text_io.qrc">
+     <normaloff>:/images/text_io/100.bmp</normaloff>:/images/text_io/100.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>表格复位</string>
+   </property>
+  </action>
+  <action name="actionStmOpen">
+   <property name="icon">
+    <iconset resource="text_io.qrc">
+     <normaloff>:/images/text_io/122.bmp</normaloff>:/images/text_io/122.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>打开stm文件</string>
+   </property>
+  </action>
+  <action name="actionStmSave">
+   <property name="icon">
+    <iconset resource="text_io.qrc">
+     <normaloff>:/images/text_io/104.bmp</normaloff>:/images/text_io/104.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>保存stm文件</string>
+   </property>
+  </action>
+  <action name="actionDataOpen">
+   <property name="icon">
+    <iconset resource="text_io.qrc">
+     <normaloff>:/images/text_io/128.bmp</normaloff>:/images/text_io/128.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>打开data文件</string>
+   </property>
+  </action>
+  <action name="actionDataSave">
+   <property name="icon">
+    <iconset resource="text_io.qrc">
+     <normaloff>:/images/text_io/066.GIF</normaloff>:/images/text_io/066.GIF</iconset>
+   </property>
+   <property name="text">
+    <string>保存data文件</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="text_io.qrc">
+     <normaloff>:/images/text_io/132.bmp</normaloff>:/images/text_io/132.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionTextOpen">
+   <property name="icon">
+    <iconset resource="text_io.qrc">
+     <normaloff>:/images/text_io/29.bmp</normaloff>:/images/text_io/29.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>打开txt文件</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="text_io.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>bin_io_window</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>530</x>
+     <y>300</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

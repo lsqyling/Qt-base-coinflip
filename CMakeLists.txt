@@ -32,6 +32,7 @@ find_package(Qt5 COMPONENTS
         Core
         Gui
         Widgets
+        Charts
         Multimedia
         REQUIRED)
 

@@ -1,0 +1,40 @@
+<RCC>
+	<qresource prefix="/">
+		<file>../images/paint_app/08.JPG</file>
+		<file>../images/paint_app/018.JPG</file>
+		<file>../images/paint_app/108.bmp</file>
+		<file>../images/paint_app/128.bmp</file>
+		<file>../images/paint_app/132.bmp</file>
+		<file>../images/paint_app/194.JPG</file>
+		<file>../images/paint_app/281.JPG</file>
+		<file>../images/paint_app/420.bmp</file>
+		<file>../images/paint_app/422.bmp</file>
+		<file>../images/paint_app/424.bmp</file>
+		<file>../images/paint_app/426.bmp</file>
+		<file>../images/paint_app/428.bmp</file>
+		<file>../images/paint_app/522.bmp</file>
+		<file>../images/paint_app/524.bmp</file>
+		<file>../images/paint_app/526.bmp</file>
+		<file>../images/paint_app/528.bmp</file>
+		<file>../images/paint_app/718.bmp</file>
+		<file>../images/paint_app/800.bmp</file>
+		<file>../images/paint_app/818.bmp</file>
+		<file>../images/paint_app/824.bmp</file>
+		<file>../images/paint_app/ARC.BMP</file>
+		<file>../images/paint_app/BEBULB.ICO</file>
+		<file>../images/paint_app/BUTTON.BMP</file>
+		<file>../images/paint_app/DELETE.BMP</file>
+		<file>../images/paint_app/ELLIPSE.BMP</file>
+		<file>../images/paint_app/fileprint.png</file>
+		<file>../images/paint_app/FREEFORM.BMP</file>
+		<file>../images/paint_app/Icon1242.ico</file>
+		<file>../images/paint_app/LINE.BMP</file>
+		<file>../images/paint_app/MCR.BMP</file>
+		<file>../images/paint_app/RECTANGL.BMP</file>
+		<file>../images/paint_app/rotateleft.png</file>
+		<file>../images/paint_app/rotateright.png</file>
+		<file>../images/paint_app/UNGROUP.BMP</file>
+		<file>../images/paint_app/zoomin.png</file>
+		<file>../images/paint_app/zoomout.png</file>
+	</qresource>
+</RCC>

@@ -1,0 +1,43 @@
+<RCC>
+	<qresource prefix="/">
+		<file>../images/text_io/29.bmp</file>
+		<file>../images/text_io/29.ico</file>
+		<file>../images/text_io/35.ico</file>
+		<file>../images/text_io/066.GIF</file>
+		<file>../images/text_io/070.GIF</file>
+		<file>../images/text_io/090.GIF</file>
+		<file>../images/text_io/100.bmp</file>
+		<file>../images/text_io/104.bmp</file>
+		<file>../images/text_io/122.bmp</file>
+		<file>../images/text_io/128.bmp</file>
+		<file>../images/text_io/132.bmp</file>
+		<file>../images/text_io/133.bmp</file>
+		<file>../images/text_io/135.JPG</file>
+		<file>../images/text_io/171.JPG</file>
+		<file>../images/text_io/174.JPG</file>
+		<file>../images/text_io/200.bmp</file>
+		<file>../images/text_io/202.bmp</file>
+		<file>../images/text_io/204.bmp</file>
+		<file>../images/text_io/206.bmp</file>
+		<file>../images/text_io/208.bmp</file>
+		<file>../images/text_io/230.bmp</file>
+		<file>../images/text_io/304.bmp</file>
+		<file>../images/text_io/400.bmp</file>
+		<file>../images/text_io/402.bmp</file>
+		<file>../images/text_io/404.bmp</file>
+		<file>../images/text_io/406.bmp</file>
+		<file>../images/text_io/500.bmp</file>
+		<file>../images/text_io/502.bmp</file>
+		<file>../images/text_io/504.bmp</file>
+		<file>../images/text_io/506.bmp</file>
+		<file>../images/text_io/510.bmp</file>
+		<file>../images/text_io/512.bmp</file>
+		<file>../images/text_io/514.bmp</file>
+		<file>../images/text_io/516.bmp</file>
+		<file>../images/text_io/704.bmp</file>
+		<file>../images/text_io/706.bmp</file>
+		<file>../images/text_io/804.bmp</file>
+		<file>../images/text_io/floppy.bmp</file>
+		<file>../images/text_io/floppy.ico</file>
+	</qresource>
+</RCC>

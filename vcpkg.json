@@ -8,5 +8,8 @@
   }, {
     "name" : "fmt",
     "version>=" : "10.2.1"
+  }, {
+    "name" : "qt5-charts",
+    "version>=" : "5.15.12"
   } ]
 }

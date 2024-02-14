@@ -25,6 +25,18 @@
 #include "standard_dialog_window.h"
 #include "custom_dialog_box_window.h"
 #include "multi_window.h"
+#include "mdi_app_window.h"
+#include "splash_login_dialog.h"
+#include "fmt/core.h"
+#include "text_io_window.h"
+#include "bin_io_window.h"
+#include "painter_window.h"
+#include "five_pointed_star.h"
+#include "rhombus_circle.h"
+#include "graph_view_window.h"
+#include "paint_app_window.h"
+#include "sincos_charts_window.h"
+#include "linechart_window.h"
 
 int main(int argc, char *argv[])
 {
@@ -90,15 +102,36 @@ int main(int argc, char *argv[])
 //    fmw.show();
 //    stringlist_model_window smw;
 //    smw.show();
-    standard_model_window smw;
-    smw.show();
+//    standard_model_window smw;
+//    smw.show();
 //    standard_dialog_window sdw;
 //    sdw.show();
 //    custom_dialog_box_window cdbw;
 //    cdbw.show();
 //    multi_window mw;
 //    mw.show();
+//    mdi_app_window maw;
+//    maw.show();
+//    return splash_login_dialog::entry();
 
+//    text_io_window tiw;
+//    tiw.show();
+//    bin_io_window biw;
+//    biw.show();
+//    painter_window pw;
+//    pw.show();
 
+//    five_pointed_star fps;
+//    fps.show();
+//    rhombus_circle rc;
+//    rc.show();
+//    graph_view_window gvw;
+//    gvw.show();
+//    paint_app_window paw;
+//    paw.show();
+//    sincos_charts_window scw;
+//    scw.show();
+    linechart_window lcw;
+    lcw.show();
     return QApplication::exec();
 }

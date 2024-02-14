@@ -1,0 +1,16 @@
+<RCC>
+	<qresource prefix="/">
+		<file>../images/linechart/3.ico</file>
+		<file>../images/linechart/39.ico</file>
+		<file>../images/linechart/43.ico</file>
+		<file>../images/linechart/132.bmp</file>
+		<file>../images/linechart/414.bmp</file>
+		<file>../images/linechart/416.bmp</file>
+		<file>../images/linechart/418.bmp</file>
+		<file>../images/linechart/704.bmp</file>
+		<file>../images/linechart/706.bmp</file>
+		<file>../images/linechart/828.bmp</file>
+		<file>../images/linechart/dis3.ico</file>
+		<file>../images/linechart/f14.ico</file>
+	</qresource>
+</RCC>

@@ -1,0 +1,37 @@
+<RCC>
+	<qresource prefix="/">
+		<file>../images/splash_icon/2.ico</file>
+		<file>../images/splash_icon/3.ico</file>
+		<file>../images/splash_icon/43.ico</file>
+		<file>../images/splash_icon/100.bmp</file>
+		<file>../images/splash_icon/104.bmp</file>
+		<file>../images/splash_icon/122.bmp</file>
+		<file>../images/splash_icon/128.bmp</file>
+		<file>../images/splash_icon/132.bmp</file>
+		<file>../images/splash_icon/200.bmp</file>
+		<file>../images/splash_icon/202.bmp</file>
+		<file>../images/splash_icon/204.bmp</file>
+		<file>../images/splash_icon/206.bmp</file>
+		<file>../images/splash_icon/208.bmp</file>
+		<file>../images/splash_icon/230.bmp</file>
+		<file>../images/splash_icon/304.bmp</file>
+		<file>../images/splash_icon/400.bmp</file>
+		<file>../images/splash_icon/402.bmp</file>
+		<file>../images/splash_icon/404.bmp</file>
+		<file>../images/splash_icon/406.bmp</file>
+		<file>../images/splash_icon/500.bmp</file>
+		<file>../images/splash_icon/502.bmp</file>
+		<file>../images/splash_icon/504.bmp</file>
+		<file>../images/splash_icon/506.bmp</file>
+		<file>../images/splash_icon/510.bmp</file>
+		<file>../images/splash_icon/512.bmp</file>
+		<file>../images/splash_icon/514.bmp</file>
+		<file>../images/splash_icon/516.bmp</file>
+		<file>../images/splash_icon/704.bmp</file>
+		<file>../images/splash_icon/706.bmp</file>
+		<file>../images/splash_icon/804.bmp</file>
+		<file>../images/splash_icon/Doc.ico</file>
+		<file>../images/splash_icon/Excel.ico</file>
+		<file>../images/splash_icon/splash2.jpg</file>
+	</qresource>
+</RCC>
